@@ -1,11 +1,16 @@
 <div class="container">
     <div class="card">
         <img [src]="user.photo" alt="photo">
-        <h1> {{ user.name }} </h1>
+        <h1 [ngStyle]="{color:isAdmin  ? 'red' : 'black'}"> {{ user.name }} </h1>
         <h1> {{ user.firstName }} </h1>
         <p [hidden]="isVisible"> {{ user.age }} ans</p>
         <input type="text" [(ngModel)]="user.quote">
         <p> {{ user.quote }}</p>
         <button (click)="toggleIsVisible()">Afficher/Ne pas afficher</button>
+        <div>
+            <button>View</button>
+            <button *ngIf="isAdmin">Edit</button>
+        </div>
+            <button (click)="changeStatus()">Devenir admin</button>
     </div>
 </div>
