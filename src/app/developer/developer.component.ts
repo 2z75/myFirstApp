@@ -13,8 +13,8 @@ import { SkillComponent } from '../skill/skill.component';
 export class DeveloperComponent {
 
     @Input() developer : Developer = {
-        lastName: "Doe",
-        firstName: "John",
+        lastName: "héhé",
+        firstName: "Zizou",
         age: 30,
         gender: "Male",
         bio: "I'm finally a developer !",
@@ -31,7 +31,7 @@ export class DeveloperComponent {
             },
             {
                 name: "Javascript",
-                logo: "https://www.https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png.net/images/logos/new-php-logo.svg",
+                logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
                 site: "https://www.javascript.com/"
             },
             {
