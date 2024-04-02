@@ -4,6 +4,7 @@ import { SignupComponent } from './sign-up/sign-up.component';
 import { BlockComponent } from './block/block.component';
 import { SearchMovieComponent } from './search-movie/search-movie.component';
 import { DeveloperComponent } from './developer/developer.component';
+import { OnomatopiaListComponent } from './onomatopia-list/onomatopia-list.component';
 
 export const routes: Routes = [
     { path: '', component: UserProfileComponent },
@@ -11,6 +12,7 @@ export const routes: Routes = [
     { path: 'block', component: BlockComponent },
     { path: 'searchmovie', component: SearchMovieComponent},
     { path: 'input', component: DeveloperComponent}, 
-    { path: 'user', component: UserProfileComponent}
+    { path: 'user', component: UserProfileComponent},
+    { path: 'onomatopia', component: OnomatopiaListComponent },
 
 ];
