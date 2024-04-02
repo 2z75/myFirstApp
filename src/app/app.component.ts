@@ -1,16 +1,22 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { BlockComponent } from './block/block.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MenuComponent } from './menu/menu.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, RouterLink, BlockComponent, UserProfileComponent, MenuComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    imports: [
+        RouterOutlet,
+        BlockComponent,
+        MenuComponent,
+        RouterLink,
+        FormsModule,
+    ],
 })
 export class AppComponent {
-  title:string = 'Zizou';
+    title = 'Angular-Quests';
 }
