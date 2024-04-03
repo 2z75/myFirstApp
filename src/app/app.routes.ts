@@ -5,6 +5,7 @@ import { BlockComponent } from './block/block.component';
 import { SearchMovieComponent } from './search-movie/search-movie.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { OnomatopiaListComponent } from './onomatopia-list/onomatopia-list.component';
+import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
 export const routes: Routes = [
     { path: '', component: UserProfileComponent },
@@ -14,5 +15,5 @@ export const routes: Routes = [
     { path: 'input', component: DeveloperComponent}, 
     { path: 'user', component: UserProfileComponent},
     { path: 'onomatopia', component: OnomatopiaListComponent },
-
+    { path: 'cocktail', component: CocktailListComponent },
 ];
