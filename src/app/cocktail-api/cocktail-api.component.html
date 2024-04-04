@@ -1,0 +1,7 @@
+<div *ngFor="let cocktail of cocktailsApi">
+    <img [src]="cocktail.picture" alt="photo de cocktail" />
+    <p>
+        Voici le {{ cocktail.name }}, il coûte en moyenne
+        {{ cocktail.price }} euros.
+    </p>
+</div>
