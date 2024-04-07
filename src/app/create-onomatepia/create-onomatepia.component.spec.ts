@@ -1,23 +1,22 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { CreateOnomatepiaComponent } from './create-onomatepia.component';
+import { CreateOnomatopiaComponent } from './create-onomatepia.component';
 
 describe('CreateOnomatepiaComponent', () => {
-  let component: CreateOnomatepiaComponent;
-  let fixture: ComponentFixture<CreateOnomatepiaComponent>;
+    let component: CreateOnomatopiaComponent;
+    let fixture: ComponentFixture<CreateOnomatopiaComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [CreateOnomatepiaComponent]
-    })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(CreateOnomatepiaComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
+        imports: [CreateOnomatopiaComponent]
+        })
+        .compileComponents();
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+        fixture = TestBed.createComponent(CreateOnomatopiaComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
+
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });

@@ -12,28 +12,28 @@ import { User } from '../models/user';
 })
 export class SignupComponent {
 
-newUser: User  = {
-    email: '',
-    firstname: '',
-    lastname: '',
-    password: '',
-};
-
-formSubmitted = false;
-
-onSubmit() {
-    if (this.formSubmitted) {
-        console.log('Le formulaire a bien été soumis', this.newUser);
-    }
-}
-
-resetForm() {
-    this.formSubmitted = false;
-    this.newUser = {
+    newUser: User  = {
         email: '',
         firstname: '',
         lastname: '',
         password: '',
     };
-}
+
+    formSubmitted = false;
+
+    onSubmit() {
+        if (this.formSubmitted) {
+            console.log('Le formulaire a bien été soumis', this.newUser);
+        }
+    }
+
+    resetForm() {
+        this.formSubmitted = false;
+        this.newUser = {
+            email: '',
+            firstname: '',
+            lastname: '',
+            password: '',
+        };
+    }
 }

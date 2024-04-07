@@ -10,14 +10,13 @@ import { CommonModule } from '@angular/common';
     templateUrl: './cocktail-list.component.html',
     styleUrl: './cocktail-list.component.scss'
 })
+
 export class CocktailListComponent {
 
     cocktails: Cocktail[] = [];
-
     service = inject(CocktailService);
 
     ngOnInit(): void {
         this.cocktails = this.service.getCocktail();
     }
-
 }

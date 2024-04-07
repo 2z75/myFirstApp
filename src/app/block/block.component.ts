@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-block',
-  standalone: true,
-  imports: [],
-  templateUrl: './block.component.html',
-  styleUrl: './block.component.scss'
+    selector: 'app-block',
+    standalone: true,
+    imports: [],
+    templateUrl: './block.component.html',
+    styleUrl: './block.component.scss'
 })
+
 export class BlockComponent {
-  quete1: string = "A B C";
+    quete1: string = "A B C";
 }
