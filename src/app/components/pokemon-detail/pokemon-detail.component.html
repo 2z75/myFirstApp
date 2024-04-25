@@ -1,0 +1,8 @@
+<div class="detailPokemon" *ngIf="pokemon">
+    <h2>Pokemon</h2>
+    <div>
+        <img [src]="pokemon.picture" alt="{{ pokemon.name }}">
+        <p>{{ pokemon.name }}</p>
+        <p>{{ pokemon.description }}</p>
+    </div>
+</div>

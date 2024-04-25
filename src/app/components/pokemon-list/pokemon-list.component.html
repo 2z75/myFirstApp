@@ -1,0 +1,7 @@
+<div class="listPokemon">
+    <h2>LIste des Pokemons</h2>
+    <div *ngFor="let pokemon of pokemons" class="cardPokemon" (click)="selectPokemon(pokemon)">
+        <img [src]="pokemon.picture" alt="{{ pokemon.name }}">
+        <p>{{ pokemon.name }}</p>
+    </div>
+</div>
